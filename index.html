@@ -2,181 +2,318 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Gabriel Ramos</title>
+  <title>Gabriel Ramos | Front-end Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- Custom Cursor -->
+  <div class="cursor-glow"></div>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-
-      <div class="hero-text">
-        <h1 id="titulo">Olá, eu sou Gabriel Ramos</h1>
-        <h2 id="cargo">Desenvolvedor Front-end</h2>
-        <p id="descricao">Construindo interfaces modernas</p>
-
-        <button onclick="trocarIdioma()" id="lang-btn">EN</button>
-
-        <div class="hero-buttons">
-          <a href="#projetos" class="btn" id="btn-projetos">Ver Projetos</a>
-          <a href="#contato" class="btn-outline" id="btn-contato">Contato</a>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">GR<span>.</span></div>
+      <div class="nav-links">
+        <a href="#sobre" id="nav-about">Sobre</a>
+        <a href="#experiencia" id="nav-exp">Experiência</a>
+        <a href="#projetos" id="nav-projects">Projetos</a>
+        <a href="#contato" id="nav-contact">Contato</a>
       </div>
-
-      <div class="hero-image">
-        <img src="profile.png" alt="Gabriel">
-      </div>
-
+      <button onclick="trocarIdioma()" id="lang-btn" class="lang-toggle">
+        <span class="lang-text">EN</span>
+        <i class="fas fa-globe"></i>
+      </button>
     </div>
-  </section>
+  </nav>
 
-  <!-- SOBRE -->
-  <section class="about">
-    <h2 id="sobre-titulo">👨‍💻 Sobre mim</h2>
-    <div class="about-box">
-      <p id="sobre-texto">
-        Sou formado em Análise e Desenvolvimento de Sistemas e estou focado em me tornar desenvolvedor.
-      </p>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
- <section class="skills">
-  <h2 id="skills-titulo">🚀 Tecnologias</h2>
-
-  <div class="skills-container">
-    <span class="skill">HTML</span>
-    <span class="skill">CSS</span>
-    <span class="skill">JavaScript</span>
-    <span class="skill">React</span>
-    <span class="skill">Fluig</span>
-  </div>
-</section>
-
-  <!-- IDIOMAS -->
-  <section class="languages">
-    <h2 id="idiomas-titulo">🌍 Idiomas</h2>
-
-    <div class="languages-container">
-      <div class="language-card">
-        <span>🇧🇷</span>
-        <div>
-          <h3 id="lang-pt">Português</h3>
-          <p id="lang-pt-nivel">Nativo</p>
-        </div>
-      </div>
-
-      <div class="language-card">
-        <span>🇺🇸</span>
-        <div>
-          <h3 id="lang-en">Inglês</h3>
-          <p id="lang-en-nivel">Fluente</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIÊNCIA -->
-  <section class="experience">
-    <h2 id="exp-titulo">💼 Experiência</h2>
-
-    <div class="experience-box">
-      <h3 id="exp-empresa">DWC Consult</h3>
-      <p><strong id="exp-cargo">Estágio em Desenvolvimento</strong></p>
-      <p id="exp-texto">
-        Atuei no desenvolvimento com HTML, CSS e JavaScript, trabalhando com a plataforma Fluig.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projetos">
-    <h2 id="projetos-titulo">🚀 Projetos</h2>
-
-    <div class="projects">
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">🌤️</span>
-          <div class="card-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-wrapper">
+        <div class="hero-content">
+          <div class="badge" id="hero-badge">Disponível para novos desafios</div>
+          <h1 id="titulo">Olá, eu sou <span class="gradient-text">Gabriel Ramos</span></h1>
+          <h2 id="cargo">Desenvolvedor Front-end</h2>
+          <p id="descricao">Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.</p>
+          
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary" id="btn-projetos">
+              Ver Projetos <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contato" class="btn btn-outline" id="btn-contato">Entrar em contato</a>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/Gabriel23Ramos" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/5583988234853" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
-        <h3 id="proj1-titulo">Weather App</h3>
-        <p id="proj1-desc">Site de previsão do tempo com busca por cidade e geolocalização. Exibe temperatura, descrição do clima e previsão para os próximos 3 dias.</p>
-        <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" id="proj1-btn" class="card-link">
-          Ver projeto <span>→</span>
-        </a>
-      </div>
-
-      <div class="card">
-        <div class="card-header">
-          <span class="card-icon">✅</span>
-          <div class="card-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+        
+        <div class="hero-visual">
+          <div class="image-wrapper">
+            <img src="profile.png" alt="Gabriel Ramos" class="profile-img">
+            <div class="blob"></div>
+            <div class="floating-card card-1">
+              <i class="fab fa-react"></i>
+              <span>React Expert</span>
+            </div>
+            <div class="floating-card card-2">
+              <i class="fas fa-code"></i>
+              <span>Clean Code</span>
+            </div>
           </div>
         </div>
-        <h3 id="proj2-titulo">To-do List</h3>
-        <p id="proj2-desc">Aplicação de lista de tarefas para organizar o dia a dia. Permite adicionar, concluir e remover tarefas de forma simples e intuitiva.</p>
-        <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" id="proj2-btn" class="card-link">
-          Ver projeto <span>→</span>
-        </a>
       </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about section" id="sobre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" id="sobre-sub">Quem sou eu</span>
+          <div class="section-title-wrapper">
+            <div class="section-icon"><i class="fas fa-user"></i></div>
+            <h2 class="section-title" id="sobre-titulo">Sobre mim</h2>
+          </div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info">
+            <p id="sobre-texto">
+              Sou formado em Análise e Desenvolvimento de Sistemas e estou focado em me tornar desenvolvedor. Apaixonado por tecnologia e design, busco sempre criar experiências digitais que unam estética e funcionalidade. Tenho facilidade em aprender novas ferramentas e foco total em entregar valor através do código.
+            </p>
+            
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">ADS</span>
+                <span class="stat-label" id="stat-edu">Formação</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label" id="stat-proj">Projetos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4m</span>
+                <span class="stat-label" id="stat-exp">Estágio</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="skills-box">
+            <h3 id="skills-titulo"> Tecnologias & Ferramentas</h3>
+            <div class="skills-container">
+              <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
+              <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+              <div class="skill-tag"><i class="fab fa-js"></i> JavaScript</div>
+              <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+              <div class="skill-tag"><i class="fas fa-code-branch"></i> Fluig</div>
+              <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
+              <div class="skill-tag"><i class="fas fa-terminal"></i> Node.js</div>
+              <div class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDIOMAS -->
+    <section class="languages section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-icon"><i class="fas fa-globe"></i></div>
+            <h2 class="section-title" id="idiomas-titulo">Idiomas</h2>
+          </div>
+        </div>
+        
+        <div class="languages-grid">
+          <div class="lang-card">
+            <div class="lang-flag">🇧🇷</div>
+            <h3 id="lang-pt">Português</h3>
+            <p id="lang-pt-nivel">Nativo</p>
+          </div>
+
+          <div class="lang-card">
+            <div class="lang-flag">🇺🇸</div>
+            <h3 id="lang-en">Inglês</h3>
+            <p id="lang-en-nivel">Fluente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section class="experience section" id="experiencia">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-icon"><i class="fas fa-briefcase"></i></div>
+            <h2 class="section-title" id="exp-titulo">Experiência Profissional</h2>
+          </div>
+        </div>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 id="exp-empresa">DWC Consult</h3>
+                <span class="timeline-date">2024 - 2025</span>
+              </div>
+              <h4 id="exp-cargo">Estágio em Desenvolvimento (4 meses)</h4>
+              <p id="exp-texto">
+                Atuação no desenvolvimento de soluções utilizando HTML, CSS e JavaScript, com foco na plataforma Fluig para automação de processos e criação de interfaces corporativas. Experiência focada em agilidade e entrega de componentes funcionais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="projects section" id="projetos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" id="proj-sub">Meu Portfólio</span>
+          <div class="section-title-wrapper">
+            <div class="section-icon"><i class="fas fa-rocket"></i></div>
+            <h2 class="section-title" id="projetos-titulo">Projetos em Destaque</h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Weather -->
+          <div class="project-card">
+            <div class="project-img-placeholder">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 id="proj1-titulo">Weather App</h3>
+              <p id="proj1-desc">Site de previsão do tempo com busca por cidade e geolocalização. Interface limpa e dados em tempo real.</p>
+              <div class="project-links">
+                <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" class="project-link" id="proj1-btn">
+                  Ver Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Todo -->
+          <div class="project-card">
+            <div class="project-img-placeholder">
+              <i class="fas fa-check-double"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 id="proj2-titulo">To-do List</h3>
+              <p id="proj2-desc">Aplicação para gerenciamento de tarefas diárias, permitindo organizar sua rotina com eficiência e simplicidade.</p>
+              <div class="project-links">
+                <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" class="project-link" id="proj2-btn">
+                  Ver Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- English Landing Page -->
+          <div class="project-card">
+            <div class="project-img-placeholder">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">UI/UX</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+              </div>
+              <h3 id="proj3-titulo">English Course Landing Page</h3>
+              <p id="proj3-desc">Landing page de alta conversão para cursos de inglês, com design moderno e foco na experiência do usuário.</p>
+              <div class="project-links">
+                <a href="https://gabriel23ramos.github.io/Landing-page/" target="_blank" class="project-link" id="proj3-btn">
+                  Ver Projeto <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contact section" id="contato">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrapper">
+            <div class="section-icon"><i class="fas fa-envelope-open-text"></i></div>
+            <h2 class="section-title" id="contato-titulo">Vamos conversar?</h2>
+          </div>
+          <p id="contato-desc">Estou sempre aberto a novas oportunidades e colaborações.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a href="mailto:gabreilramos14@gmail.com" class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info">
+              <h3 id="email-label">Email</h3>
+              <p>gabreilramos14@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://wa.me/5583988234853" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-info">
+              <h3 id="whatsapp-label">WhatsApp</h3>
+              <p>(83) 98823-4853</p>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div class="contact-info">
+              <h3 id="linkedin-label">LinkedIn</h3>
+              <p>gabrielramosdev</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/Gabriel23Ramos" target="_blank" class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-info">
+              <h3>GitHub</h3>
+              <p>Gabriel23Ramos</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p id="footer-text">© 2026 Gabriel Ramos.</p>
     </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="contact" id="contato">
-    <h2 id="contato-titulo">📞 Contato</h2>
-
-    <div class="contact-container">
-
-      <a href="mailto:gabreilramos14@gmail.com" class="contact-card">
-        <span>📧</span>
-        <div>
-          <h3 id="email-label">Email</h3>
-          <p>gabreilramos14@gmail.com</p>
-        </div>
-      </a>
-
-      <a href="https://wa.me/5583988234853" target="_blank" class="contact-card">
-        <span>📱</span>
-        <div>
-          <h3 id="whatsapp-label">WhatsApp</h3>
-          <p>(83) 98823-4853</p>
-        </div>
-      </a>
-
-      <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="contact-card">
-        <span>💼</span>
-        <div>
-          <h3 id="linkedin-label">LinkedIn</h3>
-          <p>/in/gabrielramosdev</p>
-        </div>
-      </a>
-
-      <a href="https://github.com/Gabriel23Ramos" target="_blank" class="contact-card">
-        <span>💻</span>
-        <div>
-          <h3>GitHub</h3>
-          <p>@Gabriel23Ramos</p>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2026 Gabriel Ramos</p>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
