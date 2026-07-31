@@ -4,26 +4,20 @@
   <meta charset="UTF-8">
   <title>Gabriel Ramos | Front-end Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Custom Cursor -->
-  <div class="cursor-glow"></div>
-
-  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      <div class="logo">GR<span>.</span></div>
+      <div class="logo"><i class="fas fa-code"></i> Gabriel Ramos<span>.</span></div>
       <div class="nav-links">
         <a href="#sobre" id="nav-about">Sobre</a>
         <a href="#experiencia" id="nav-exp">Experiência</a>
@@ -42,37 +36,34 @@
     <section class="hero" id="home">
       <div class="container hero-wrapper">
         <div class="hero-content">
-          <div class="badge" id="hero-badge">Disponível para novos desafios</div>
-          <h1 id="titulo">Olá, eu sou <span class="gradient-text">Gabriel Ramos</span></h1>
+          <div class="eyebrow" id="hero-badge">
+            <span class="status-dot"></span> Disponível para novos desafios
+          </div>
+          <h1 id="titulo">Olá, eu sou <span class="accent-name">Gabriel Ramos</span></h1>
           <h2 id="cargo">Desenvolvedor Front-end</h2>
           <p id="descricao">Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.</p>
-          
+
           <div class="hero-actions">
             <a href="#projetos" class="btn btn-primary" id="btn-projetos">
               Ver Projetos <i class="fas fa-arrow-right"></i>
             </a>
             <a href="#contato" class="btn btn-outline" id="btn-contato">Entrar em contato</a>
           </div>
-          
+
           <div class="social-links">
-            <a href="https://github.com/Gabriel23Ramos" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://wa.me/5583988234853" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/Gabriel23Ramos" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://wa.me/5583988234853" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
           </div>
         </div>
-        
+
         <div class="hero-visual">
-          <div class="image-wrapper">
-            <img src="profile.png" alt="Gabriel Ramos" class="profile-img">
-            <div class="blob"></div>
-            <div class="floating-card card-1">
-              <i class="fab fa-react"></i>
-              <span>React Expert</span>
-            </div>
-            <div class="floating-card card-2">
-              <i class="fas fa-code"></i>
-              <span>Clean Code</span>
-            </div>
+          <div class="profile-frame">
+            <img src="profile.png" alt="Gabriel Ramos">
+          </div>
+          <div class="profile-caption">
+            <span>Cabedelo, PB — Brasil</span>
+            <span>2026</span>
           </div>
         </div>
       </div>
@@ -83,36 +74,37 @@
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle" id="sobre-sub">Quem sou eu</span>
-          <div class="section-title-wrapper">
-            <div class="section-icon"><i class="fas fa-user"></i></div>
-            <h2 class="section-title" id="sobre-titulo">Sobre mim</h2>
-          </div>
+          <h2 class="section-title" id="sobre-titulo">Sobre mim</h2>
         </div>
-        
+
         <div class="about-grid">
           <div class="about-info">
             <p id="sobre-texto">
               Sou formado em Análise e Desenvolvimento de Sistemas e estou focado em me tornar desenvolvedor. Apaixonado por tecnologia e design, busco sempre criar experiências digitais que unam estética e funcionalidade. Tenho facilidade em aprender novas ferramentas e foco total em entregar valor através do código.
             </p>
-            
-            <div class="stats-grid">
-              <div class="stat-item">
-                <span class="stat-number">ADS</span>
-                <span class="stat-label" id="stat-edu">Formação</span>
+
+            <div class="fact-list">
+              <div class="fact-row">
+                <span class="fact-label" id="stat-edu">Formação</span>
+                <span class="fact-value" id="fact-edu-value">Análise e Desenvolvimento de Sistemas</span>
               </div>
-              <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-label" id="stat-proj">Projetos</span>
+              <div class="fact-row">
+                <span class="fact-label" id="stat-proj">Projetos</span>
+                <span class="fact-value">4+</span>
               </div>
-              <div class="stat-item">
-                <span class="stat-number">4m</span>
-                <span class="stat-label" id="stat-exp">Estágio</span>
+              <div class="fact-row">
+                <span class="fact-label" id="stat-exp">Estágio</span>
+                <span class="fact-value" id="fact-exp-value">4 meses — DWC Consult</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label" id="idiomas-titulo">Idiomas</span>
+                <span class="fact-value"><span id="lang-pt">Português</span> (<span id="lang-pt-nivel">nativo</span>), <span id="lang-en">Inglês</span> (<span id="lang-en-nivel">fluente</span>)</span>
               </div>
             </div>
           </div>
-          
+
           <div class="skills-box">
-            <h3 id="skills-titulo"> Tecnologias & Ferramentas</h3>
+            <h3 id="skills-titulo">Tecnologias & Ferramentas</h3>
             <div class="skills-container">
               <div class="skill-tag"><i class="fab fa-html5"></i> HTML5</div>
               <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
@@ -121,34 +113,8 @@
               <div class="skill-tag"><i class="fas fa-code-branch"></i> Fluig</div>
               <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
               <div class="skill-tag"><i class="fas fa-terminal"></i> Node.js</div>
-              <div class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsive</div>
+              <div class="skill-tag"><i class="fas fa-mobile-alt"></i> Responsivo</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- IDIOMAS -->
-    <section class="languages section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-icon"><i class="fas fa-globe"></i></div>
-            <h2 class="section-title" id="idiomas-titulo">Idiomas</h2>
-          </div>
-        </div>
-        
-        <div class="languages-grid">
-          <div class="lang-card">
-            <div class="lang-flag">🇧🇷</div>
-            <h3 id="lang-pt">Português</h3>
-            <p id="lang-pt-nivel">Nativo</p>
-          </div>
-
-          <div class="lang-card">
-            <div class="lang-flag">🇺🇸</div>
-            <h3 id="lang-en">Inglês</h3>
-            <p id="lang-en-nivel">Fluente</p>
           </div>
         </div>
       </div>
@@ -158,19 +124,17 @@
     <section class="experience section" id="experiencia">
       <div class="container">
         <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-icon"><i class="fas fa-briefcase"></i></div>
-            <h2 class="section-title" id="exp-titulo">Experiência Profissional</h2>
-          </div>
+          <span class="section-subtitle">Trajetória</span>
+          <h2 class="section-title" id="exp-titulo">Experiência Profissional</h2>
         </div>
-        
+
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
                 <h3 id="exp-empresa">DWC Consult</h3>
-                <span class="timeline-date">2024 - 2025</span>
+                <span class="timeline-date">2024 — 2025</span>
               </div>
               <h4 id="exp-cargo">Estágio em Desenvolvimento (4 meses)</h4>
               <p id="exp-texto">
@@ -187,17 +151,52 @@
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle" id="proj-sub">Meu Portfólio</span>
-          <div class="section-title-wrapper">
-            <div class="section-icon"><i class="fas fa-rocket"></i></div>
-            <h2 class="section-title" id="projetos-titulo">Projetos em Destaque</h2>
+          <h2 class="section-title" id="projetos-titulo">Projetos em Destaque</h2>
+        </div>
+
+        <div class="featured-project">
+          <div class="featured-info">
+            <div class="live-status">
+              <span class="status-dot"></span>
+              <span id="feat-status">em produção, com cliente real</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <h3 id="feat-titulo">Ericka Ramos Nails</h3>
+            <p id="feat-desc">Site completo para o estúdio de unhas da minha irmã: agenda de horários com disponibilidade real por dia da semana, reserva automática direto no banco de dados (Supabase), painel administrativo protegido por PIN para gerenciar horários e reservas manuais, e integração com WhatsApp para confirmação. Do design ao deploy, um projeto real usado por uma cliente real todos os dias.</p>
+            <div class="featured-links">
+              <a href="https://ericka-nails-ef7e-liart.vercel.app/" target="_blank" class="btn btn-primary" id="feat-btn-live">
+                Ver site <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/Gabriel23Ramos/Ericka-Nails" target="_blank" class="btn btn-outline" id="feat-btn-code">
+                <i class="fab fa-github"></i> Código-fonte
+              </a>
+            </div>
+          </div>
+
+          <div class="browser-frame">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+            </div>
+            <img src="ericka-preview.jpg" alt="Print do site Ericka Ramos Nails">
           </div>
         </div>
 
         <div class="projects-grid">
           <!-- Weather -->
           <div class="project-card">
-            <div class="project-img-placeholder">
-              <i class="fas fa-cloud-sun"></i>
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="project-mock">
+                <div class="mock-icon"><i class="fas fa-cloud-sun"></i></div>
+                <div class="mock-line w45" style="align-self:center;"></div>
+                <div class="mock-line w30" style="align-self:center;"></div>
+              </div>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -207,18 +206,24 @@
               </div>
               <h3 id="proj1-titulo">Weather App</h3>
               <p id="proj1-desc">Site de previsão do tempo com busca por cidade e geolocalização. Interface limpa e dados em tempo real.</p>
-              <div class="project-links">
-                <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" class="project-link" id="proj1-btn">
-                  Ver Projeto <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
+              <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" class="project-link" id="proj1-btn">
+                Ver Projeto <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- Todo -->
           <div class="project-card">
-            <div class="project-img-placeholder">
-              <i class="fas fa-check-double"></i>
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="project-mock">
+                <div class="mock-icon"><i class="fas fa-list-check"></i></div>
+                <div class="mock-checklist">
+                  <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w70"></div></div>
+                  <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w45"></div></div>
+                  <div class="mock-check-row"><div class="mock-checkbox"></div><div class="mock-line w70"></div></div>
+                </div>
+              </div>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -228,18 +233,23 @@
               </div>
               <h3 id="proj2-titulo">To-do List</h3>
               <p id="proj2-desc">Aplicação para gerenciamento de tarefas diárias, permitindo organizar sua rotina com eficiência e simplicidade.</p>
-              <div class="project-links">
-                <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" class="project-link" id="proj2-btn">
-                  Ver Projeto <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
+              <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" class="project-link" id="proj2-btn">
+                Ver Projeto <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
 
           <!-- English Landing Page -->
           <div class="project-card">
-            <div class="project-img-placeholder">
-              <i class="fas fa-graduation-cap"></i>
+            <div class="browser-frame">
+              <div class="browser-bar"><span></span><span></span><span></span></div>
+              <div class="project-mock">
+                <div class="mock-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="mock-line w45"></div>
+                <div class="mock-line w70"></div>
+                <div class="mock-line w30"></div>
+                <div class="mock-btn"></div>
+              </div>
             </div>
             <div class="project-content">
               <div class="project-tags">
@@ -249,11 +259,9 @@
               </div>
               <h3 id="proj3-titulo">English Course Landing Page</h3>
               <p id="proj3-desc">Landing page de alta conversão para cursos de inglês, com design moderno e foco na experiência do usuário.</p>
-              <div class="project-links">
-                <a href="https://gabriel23ramos.github.io/Landing-page/" target="_blank" class="project-link" id="proj3-btn">
-                  Ver Projeto <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
+              <a href="https://gabriel23ramos.github.io/Landing-page/" target="_blank" class="project-link" id="proj3-btn">
+                Ver Projeto <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -264,44 +272,46 @@
     <section class="contact section" id="contato">
       <div class="container">
         <div class="section-header">
-          <div class="section-title-wrapper">
-            <div class="section-icon"><i class="fas fa-envelope-open-text"></i></div>
-            <h2 class="section-title" id="contato-titulo">Vamos conversar?</h2>
-          </div>
-          <p id="contato-desc">Estou sempre aberto a novas oportunidades e colaborações.</p>
+          <span class="section-subtitle">Fale comigo</span>
+          <h2 class="section-title" id="contato-titulo">Vamos conversar?</h2>
+          <p class="contact-desc" id="contato-desc">Estou sempre aberto a novas oportunidades e colaborações.</p>
         </div>
 
-        <div class="contact-grid">
+        <div class="contact-list">
           <a href="mailto:gabreilramos14@gmail.com" class="contact-item">
             <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-info">
+            <div class="contact-label-group">
               <h3 id="email-label">Email</h3>
               <p>gabreilramos14@gmail.com</p>
             </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
           </a>
 
           <a href="https://wa.me/5583988234853" target="_blank" class="contact-item">
             <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-            <div class="contact-info">
+            <div class="contact-label-group">
               <h3 id="whatsapp-label">WhatsApp</h3>
               <p>(83) 98823-4853</p>
             </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="contact-item">
             <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="contact-info">
+            <div class="contact-label-group">
               <h3 id="linkedin-label">LinkedIn</h3>
               <p>gabrielramosdev</p>
             </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
           </a>
 
           <a href="https://github.com/Gabriel23Ramos" target="_blank" class="contact-item">
             <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div class="contact-info">
+            <div class="contact-label-group">
               <h3>GitHub</h3>
               <p>Gabriel23Ramos</p>
             </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
           </a>
         </div>
       </div>
@@ -310,7 +320,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p id="footer-text">© 2026 Gabriel Ramos.</p>
+      <p id="footer-text">© 2026 Gabriel Ramos — construído com HTML, CSS e JS.</p>
     </div>
   </footer>
 
