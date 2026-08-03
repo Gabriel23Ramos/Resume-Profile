@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Gabriel Ramos | Front-end Developer</title>
+  <title>Gabriel Ramos | Full Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
             <span class="status-dot"></span> Disponível para novos desafios
           </div>
           <h1 id="titulo">Olá, eu sou <span class="accent-name">Gabriel Ramos</span></h1>
-          <h2 id="cargo">Desenvolvedor Front-end</h2>
+          <h2 id="cargo">Desenvolvedor Full Stack</h2>
           <p id="descricao">Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.</p>
 
           <div class="hero-actions">
@@ -60,10 +60,6 @@
         <div class="hero-visual">
           <div class="profile-frame">
             <img src="profile.png" alt="Gabriel Ramos">
-          </div>
-          <div class="profile-caption">
-            <span>Cabedelo, PB — Brasil</span>
-            <span>2026</span>
           </div>
         </div>
       </div>
@@ -110,6 +106,7 @@
               <div class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
               <div class="skill-tag"><i class="fab fa-js"></i> JavaScript</div>
               <div class="skill-tag"><i class="fab fa-react"></i> React</div>
+              <div class="skill-tag"><i class="fas fa-database"></i> Supabase</div>
               <div class="skill-tag"><i class="fas fa-code-branch"></i> Fluig</div>
               <div class="skill-tag"><i class="fab fa-git-alt"></i> Git</div>
               <div class="skill-tag"><i class="fas fa-terminal"></i> Node.js</div>
@@ -129,6 +126,20 @@
         </div>
 
         <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3 id="exp2-empresa">Professor de Inglês</h3>
+                <span class="timeline-date" id="exp2-date">2024 — Atual</span>
+              </div>
+              <h4 id="exp2-cargo">Aulas particulares (2 anos)</h4>
+              <p id="exp2-texto">
+                Leciono inglês há 2 anos, o que me ajuda a ler documentações e códigos com mais fluência, entender materiais técnicos na fonte e me comunicar melhor em contextos internacionais — abrindo portas para atuar em projetos e equipes fora do Brasil.
+              </p>
+            </div>
+          </div>
+
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
@@ -156,6 +167,7 @@
 
         <div class="featured-project">
           <div class="featured-info">
+            <span class="project-index">01 / 04</span>
             <div class="live-status">
               <span class="status-dot"></span>
               <span id="feat-status">em produção, com cliente real</span>
@@ -187,81 +199,98 @@
           </div>
         </div>
 
-        <div class="projects-grid">
-          <!-- Weather -->
-          <div class="project-card">
-            <div class="browser-frame">
-              <div class="browser-bar"><span></span><span></span><span></span></div>
-              <div class="project-mock">
-                <div class="mock-icon"><i class="fas fa-cloud-sun"></i></div>
-                <div class="mock-line w45" style="align-self:center;"></div>
-                <div class="mock-line w30" style="align-self:center;"></div>
-              </div>
+        <div class="featured-project reverse">
+          <div class="featured-info">
+            <span class="project-index">02 / 04</span>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">API</span>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JS</span>
-              </div>
-              <h3 id="proj1-titulo">Weather App</h3>
-              <p id="proj1-desc">Site de previsão do tempo com busca por cidade e geolocalização. Interface limpa e dados em tempo real.</p>
-              <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" class="project-link" id="proj1-btn">
-                Ver Projeto <i class="fas fa-external-link-alt"></i>
+            <h3 id="proj1-titulo">Weather App</h3>
+            <p id="proj1-desc">Previsão do tempo por cidade ou geolocalização, com dados em tempo real via API pública.</p>
+            <div class="featured-links">
+              <a href="https://gabriel23ramos.github.io/Weather-News/" target="_blank" class="btn btn-primary" id="proj1-btn">
+                Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/Gabriel23Ramos/Weather-News" target="_blank" class="btn btn-outline" id="proj1-btn-code">
+                <i class="fab fa-github"></i> Código-fonte
               </a>
             </div>
           </div>
 
-          <!-- Todo -->
-          <div class="project-card">
-            <div class="browser-frame">
-              <div class="browser-bar"><span></span><span></span><span></span></div>
-              <div class="project-mock">
-                <div class="mock-icon"><i class="fas fa-list-check"></i></div>
-                <div class="mock-checklist">
-                  <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w70"></div></div>
-                  <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w45"></div></div>
-                  <div class="mock-check-row"><div class="mock-checkbox"></div><div class="mock-line w70"></div></div>
-                </div>
-              </div>
+          <div class="browser-frame">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="project-mock">
+              <div class="mock-icon"><i class="fas fa-cloud-sun"></i></div>
+              <div class="mock-line w45" style="align-self:center;"></div>
+              <div class="mock-line w30" style="align-self:center;"></div>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-                <span class="tag">JS</span>
-              </div>
-              <h3 id="proj2-titulo">To-do List</h3>
-              <p id="proj2-desc">Aplicação para gerenciamento de tarefas diárias, permitindo organizar sua rotina com eficiência e simplicidade.</p>
-              <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" class="project-link" id="proj2-btn">
-                Ver Projeto <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+
+        <div class="featured-project">
+          <div class="featured-info">
+            <span class="project-index">03 / 04</span>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3 id="proj2-titulo">To-do List</h3>
+            <p id="proj2-desc">Gerenciador de tarefas diárias, com foco em simplicidade e eficiência.</p>
+            <div class="featured-links">
+              <a href="https://gabriel23ramos.github.io/To-do/" target="_blank" class="btn btn-primary" id="proj2-btn">
+                Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="https://github.com/Gabriel23Ramos/To-do" target="_blank" class="btn btn-outline" id="proj2-btn-code">
+                <i class="fab fa-github"></i> Código-fonte
               </a>
             </div>
           </div>
 
-          <!-- English Landing Page -->
-          <div class="project-card">
-            <div class="browser-frame">
-              <div class="browser-bar"><span></span><span></span><span></span></div>
-              <div class="project-mock">
-                <div class="mock-icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="mock-line w45"></div>
-                <div class="mock-line w70"></div>
-                <div class="mock-line w30"></div>
-                <div class="mock-btn"></div>
+          <div class="browser-frame">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="project-mock">
+              <div class="mock-icon"><i class="fas fa-list-check"></i></div>
+              <div class="mock-checklist">
+                <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w70"></div></div>
+                <div class="mock-check-row"><div class="mock-checkbox done"></div><div class="mock-line w45"></div></div>
+                <div class="mock-check-row"><div class="mock-checkbox"></div><div class="mock-line w70"></div></div>
               </div>
             </div>
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tag">UI/UX</span>
-                <span class="tag">HTML</span>
-                <span class="tag">CSS</span>
-              </div>
-              <h3 id="proj3-titulo">English Course Landing Page</h3>
-              <p id="proj3-desc">Landing page de alta conversão para cursos de inglês, com design moderno e foco na experiência do usuário.</p>
-              <a href="https://gabriel23ramos.github.io/Landing-page/" target="_blank" class="project-link" id="proj3-btn">
-                Ver Projeto <i class="fas fa-external-link-alt"></i>
+          </div>
+        </div>
+
+        <div class="featured-project reverse">
+          <div class="featured-info">
+            <span class="project-index">04 / 04</span>
+            <div class="project-tags">
+              <span class="tag">UI/UX</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <h3 id="proj3-titulo">English Course Landing Page</h3>
+            <p id="proj3-desc">Landing page de alta conversão para cursos de inglês, com design moderno.</p>
+            <div class="featured-links">
+              <a href="https://gabriel23ramos.github.io/Landing-page/" target="_blank" class="btn btn-primary" id="proj3-btn">
+                Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>
               </a>
+              <a href="https://github.com/Gabriel23Ramos/Landing-page" target="_blank" class="btn btn-outline" id="proj3-btn-code">
+                <i class="fab fa-github"></i> Código-fonte
+              </a>
+            </div>
+          </div>
+
+          <div class="browser-frame">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="project-mock">
+              <div class="mock-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="mock-line w45"></div>
+              <div class="mock-line w70"></div>
+              <div class="mock-line w30"></div>
+              <div class="mock-btn"></div>
             </div>
           </div>
         </div>
