@@ -8,7 +8,7 @@ const translations = {
     navContact: "Contato",
     heroBadge: "Disponível para novos desafios",
     titulo: 'Olá, eu sou <span class="accent-name">Gabriel Ramos</span>',
-    cargo: "Desenvolvedor Front-end",
+    cargo: "Desenvolvedor Full Stack",
     descricao: "Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.",
     btnProjetos: 'Ver Projetos <i class="fas fa-arrow-right"></i>',
     btnContato: "Entrar em contato",
@@ -27,20 +27,24 @@ const translations = {
     langEn: "Inglês",
     langEnNivel: "fluente",
     expTitulo: "Experiência Profissional",
+    exp2Empresa: "Professor de Inglês",
+    exp2Date: "2024 — Atual",
+    exp2Cargo: "Aulas particulares (2 anos)",
+    exp2Texto: "Leciono inglês há 2 anos, o que me ajuda a ler documentações e códigos com mais fluência, entender materiais técnicos na fonte e me comunicar melhor em contextos internacionais — abrindo portas para atuar em projetos e equipes fora do Brasil.",
     expEmpresa: "DWC Consult",
     expCargo: "Estágio em Desenvolvimento (4 meses)",
     expTexto: "Atuação no desenvolvimento de soluções utilizando HTML, CSS e JavaScript, com foco na plataforma Fluig para automação de processos e criação de interfaces corporativas. Experiência focada em agilidade e entrega de componentes funcionais.",
     projSub: "Meu Portfólio",
     projetosTitulo: "Projetos em Destaque",
     proj1Titulo: "Weather App",
-    proj1Desc: "Site de previsão do tempo com busca por cidade e geolocalização. Interface limpa e dados em tempo real.",
-    proj1Btn: 'Ver Projeto <i class="fas fa-external-link-alt"></i>',
+    proj1Desc: "Previsão do tempo por cidade ou geolocalização, com dados em tempo real via API pública.",
+    proj1Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
     proj2Titulo: "To-do List",
-    proj2Desc: "Aplicação para gerenciamento de tarefas diárias, permitindo organizar sua rotina com eficiência e simplicidade.",
-    proj2Btn: 'Ver Projeto <i class="fas fa-external-link-alt"></i>',
+    proj2Desc: "Gerenciador de tarefas diárias, com foco em simplicidade e eficiência.",
+    proj2Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
     proj3Titulo: "English Course Landing Page",
-    proj3Desc: "Landing page de alta conversão para cursos de inglês, com design moderno e foco na experiência do usuário.",
-    proj3Btn: 'Ver Projeto <i class="fas fa-external-link-alt"></i>',
+    proj3Desc: "Landing page de alta conversão para cursos de inglês, com design moderno.",
+    proj3Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
     featStatus: "em produção, com cliente real",
     featTitulo: "Ericka Ramos Nails",
     featDesc: "Site completo para o estúdio de unhas da minha irmã: agenda de horários com disponibilidade real por dia da semana, reserva automática direto no banco de dados (Supabase), painel administrativo protegido por PIN para gerenciar horários e reservas manuais, e integração com WhatsApp para confirmação. Do design ao deploy, um projeto real usado por uma cliente real todos os dias.",
@@ -61,7 +65,7 @@ const translations = {
     navContact: "Contact",
     heroBadge: "Available for new challenges",
     titulo: 'Hi, I\'m <span class="accent-name">Gabriel Ramos</span>',
-    cargo: "Front-end Developer",
+    cargo: "Full Stack Developer",
     descricao: "Transforming ideas into memorable digital experiences with clean code and intuitive design.",
     btnProjetos: 'View Projects <i class="fas fa-arrow-right"></i>',
     btnContato: "Get in touch",
@@ -80,20 +84,24 @@ const translations = {
     langEn: "English",
     langEnNivel: "fluent",
     expTitulo: "Professional Experience",
+    exp2Empresa: "English Teacher",
+    exp2Date: "2024 — Present",
+    exp2Cargo: "Private lessons (2 years)",
+    exp2Texto: "I've been teaching English for 2 years, which helps me read documentation and code more fluently, understand technical material at the source, and communicate better in international contexts — opening doors to work on projects and teams outside Brazil.",
     expEmpresa: "DWC Consult",
     expCargo: "Development Intern (4 months)",
     expTexto: "Working on the development of solutions using HTML, CSS, and JavaScript, focusing on the Fluig platform for process automation and creation of corporate interfaces. Experience focused on agility and delivering functional components.",
     projSub: "My Portfolio",
     projetosTitulo: "Featured Projects",
     proj1Titulo: "Weather App",
-    proj1Desc: "Weather forecast site with city search and geolocation. Clean interface and real-time data.",
-    proj1Btn: 'View Project <i class="fas fa-external-link-alt"></i>',
+    proj1Desc: "Weather forecast by city or geolocation, with real-time data from a public API.",
+    proj1Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
     proj2Titulo: "To-do List",
-    proj2Desc: "Application for daily task management, allowing you to organize your routine with efficiency and simplicity.",
-    proj2Btn: 'View Project <i class="fas fa-external-link-alt"></i>',
+    proj2Desc: "Daily task manager focused on simplicity and efficiency.",
+    proj2Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
     proj3Titulo: "English Course Landing Page",
-    proj3Desc: "High-conversion landing page for English courses, with modern design and focus on user experience.",
-    proj3Btn: 'View Project <i class="fas fa-external-link-alt"></i>',
+    proj3Desc: "High-conversion landing page for English courses, with modern design.",
+    proj3Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
     featStatus: "in production, with a real client",
     featTitulo: "Ericka Ramos Nails",
     featDesc: "Full site for my sister's nail studio: a booking calendar with real weekly availability, automatic reservations saved straight to the database (Supabase), a PIN-protected admin panel to manage schedules and manual bookings, and WhatsApp integration for confirmation. From design to deployment, a real project used by a real client every day.",
@@ -139,6 +147,10 @@ function trocarIdioma() {
   document.getElementById("lang-en").innerText = t.langEn;
   document.getElementById("lang-en-nivel").innerText = t.langEnNivel;
   document.getElementById("exp-titulo").innerText = t.expTitulo;
+  document.getElementById("exp2-empresa").innerText = t.exp2Empresa;
+  document.getElementById("exp2-date").innerText = t.exp2Date;
+  document.getElementById("exp2-cargo").innerText = t.exp2Cargo;
+  document.getElementById("exp2-texto").innerText = t.exp2Texto;
   document.getElementById("exp-empresa").innerText = t.expEmpresa;
   document.getElementById("exp-cargo").innerText = t.expCargo;
   document.getElementById("exp-texto").innerText = t.expTexto;
@@ -147,12 +159,15 @@ function trocarIdioma() {
   document.getElementById("proj1-titulo").innerText = t.proj1Titulo;
   document.getElementById("proj1-desc").innerText = t.proj1Desc;
   document.getElementById("proj1-btn").innerHTML = t.proj1Btn;
+  document.getElementById("proj1-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("proj2-titulo").innerText = t.proj2Titulo;
   document.getElementById("proj2-desc").innerText = t.proj2Desc;
   document.getElementById("proj2-btn").innerHTML = t.proj2Btn;
+  document.getElementById("proj2-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("proj3-titulo").innerText = t.proj3Titulo;
   document.getElementById("proj3-desc").innerText = t.proj3Desc;
   document.getElementById("proj3-btn").innerHTML = t.proj3Btn;
+  document.getElementById("proj3-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("feat-status").innerText = t.featStatus;
   document.getElementById("feat-titulo").innerText = t.featTitulo;
   document.getElementById("feat-desc").innerText = t.featDesc;
@@ -165,6 +180,53 @@ function trocarIdioma() {
   document.getElementById("linkedin-label").innerText = t.linkedinLabel;
   document.getElementById("footer-text").innerText = t.footerText;
   document.querySelector(".lang-text").innerText = t.langBtn;
+}
+
+// Active nav link on scroll
+const navMap = {
+  sobre: "nav-about",
+  experiencia: "nav-exp",
+  projetos: "nav-projects",
+  contato: "nav-contact"
+};
+
+const navObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const navId = navMap[entry.target.id];
+    if (!navId) return;
+    const link = document.getElementById(navId);
+    if (entry.isIntersecting) {
+      document.querySelectorAll(".nav-links a").forEach((a) => a.classList.remove("active"));
+      link.classList.add("active");
+    }
+  });
+}, { rootMargin: "-45% 0px -45% 0px" });
+
+document.addEventListener("DOMContentLoaded", () => {
+  Object.keys(navMap).forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) navObserver.observe(el);
+  });
+});
+
+// Mobile menu toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navLinksEl = document.getElementById("nav-links");
+
+if (menuToggle && navLinksEl) {
+  menuToggle.addEventListener("click", () => {
+    navLinksEl.classList.toggle("open");
+    const icon = menuToggle.querySelector("i");
+    const isOpen = navLinksEl.classList.contains("open");
+    icon.className = isOpen ? "fas fa-xmark" : "fas fa-bars";
+  });
+
+  navLinksEl.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinksEl.classList.remove("open");
+      menuToggle.querySelector("i").className = "fas fa-bars";
+    });
+  });
 }
 
 // Scroll Reveal Effect
