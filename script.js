@@ -36,18 +36,21 @@ const translations = {
     expTexto: "Atuação no desenvolvimento de soluções utilizando HTML, CSS e JavaScript, com foco na plataforma Fluig para automação de processos e criação de interfaces corporativas. Experiência focada em agilidade e entrega de componentes funcionais.",
     projSub: "Meu Portfólio",
     projetosTitulo: "Projetos em Destaque",
-    proj1Titulo: "Weather App",
-    proj1Desc: "Previsão do tempo por cidade ou geolocalização, com dados em tempo real via API pública.",
+    proj1Titulo: "Ericka Ramos Nails",
+    proj1Desc: "Site completo para o estúdio de unhas da minha irmã: agenda de horários com disponibilidade real por dia da semana, reserva automática direto no banco de dados (Supabase), painel administrativo protegido por PIN para gerenciar horários e reservas manuais, e integração com WhatsApp para confirmação.",
     proj1Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
-    proj2Titulo: "To-do List",
-    proj2Desc: "Gerenciador de tarefas diárias, com foco em simplicidade e eficiência.",
+    proj2Titulo: "Weather App",
+    proj2Desc: "Previsão do tempo por cidade ou geolocalização, com dados em tempo real via API pública.",
     proj2Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
-    proj3Titulo: "English Course Landing Page",
-    proj3Desc: "Landing page de alta conversão para cursos de inglês, com design moderno.",
+    proj3Titulo: "To-do List",
+    proj3Desc: "Gerenciador de tarefas diárias, com foco em simplicidade e eficiência.",
     proj3Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
-    featStatus: "em produção, com cliente real",
-    featTitulo: "Ericka Ramos Nails",
-    featDesc: "Site completo para o estúdio de unhas da minha irmã: agenda de horários com disponibilidade real por dia da semana, reserva automática direto no banco de dados (Supabase), painel administrativo protegido por PIN para gerenciar horários e reservas manuais, e integração com WhatsApp para confirmação. Do design ao deploy, um projeto real usado por uma cliente real todos os dias.",
+    proj4Titulo: "English Course Landing Page",
+    proj4Desc: "Landing page de alta conversão para cursos de inglês, com design moderno.",
+    proj4Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
+    featStatus: "projeto pessoal completo, em produção",
+    featTitulo: "WealthPath — Gestão Financeira Pessoal",
+    featDesc: "Dashboard completo de finanças pessoais: visão geral de saldo, receitas e despesas em tempo real, controle de metas e dívidas, gastos fixos recorrentes, categorização automática de transações e geração de relatórios em PDF. Interface com múltiplos temas, totalmente responsiva. O projeto mais completo que já construí, unindo várias tecnologias do front ao back.",
     featBtnLive: 'Ver site <i class="fas fa-arrow-up-right-from-square"></i>',
     featBtnCode: '<i class="fab fa-github"></i> Código-fonte',
     contatoTitulo: "Vamos conversar?",
@@ -93,18 +96,21 @@ const translations = {
     expTexto: "Working on the development of solutions using HTML, CSS, and JavaScript, focusing on the Fluig platform for process automation and creation of corporate interfaces. Experience focused on agility and delivering functional components.",
     projSub: "My Portfolio",
     projetosTitulo: "Featured Projects",
-    proj1Titulo: "Weather App",
-    proj1Desc: "Weather forecast by city or geolocation, with real-time data from a public API.",
+    proj1Titulo: "Ericka Ramos Nails",
+    proj1Desc: "Full site for my sister's nail studio: a booking calendar with real weekly availability, automatic reservations saved straight to the database (Supabase), a PIN-protected admin panel to manage schedules and manual bookings, and WhatsApp integration for confirmation.",
     proj1Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
-    proj2Titulo: "To-do List",
-    proj2Desc: "Daily task manager focused on simplicity and efficiency.",
+    proj2Titulo: "Weather App",
+    proj2Desc: "Weather forecast by city or geolocation, with real-time data from a public API.",
     proj2Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
-    proj3Titulo: "English Course Landing Page",
-    proj3Desc: "High-conversion landing page for English courses, with modern design.",
+    proj3Titulo: "To-do List",
+    proj3Desc: "Daily task manager focused on simplicity and efficiency.",
     proj3Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
-    featStatus: "in production, with a real client",
-    featTitulo: "Ericka Ramos Nails",
-    featDesc: "Full site for my sister's nail studio: a booking calendar with real weekly availability, automatic reservations saved straight to the database (Supabase), a PIN-protected admin panel to manage schedules and manual bookings, and WhatsApp integration for confirmation. From design to deployment, a real project used by a real client every day.",
+    proj4Titulo: "English Course Landing Page",
+    proj4Desc: "High-conversion landing page for English courses, with modern design.",
+    proj4Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
+    featStatus: "personal project, fully built and in production",
+    featTitulo: "WealthPath — Personal Finance Management",
+    featDesc: "A complete personal finance dashboard: real-time overview of balance, income and expenses, goal and debt tracking, recurring fixed expenses, automatic transaction categorization, and PDF report generation. Multi-theme interface, fully responsive. The most complete project I've built so far, bringing together many technologies from front to back.",
     featBtnLive: 'View site <i class="fas fa-arrow-up-right-from-square"></i>',
     featBtnCode: '<i class="fab fa-github"></i> Source code',
     contatoTitulo: "Let's talk?",
@@ -168,11 +174,14 @@ function trocarIdioma() {
   document.getElementById("proj3-desc").innerText = t.proj3Desc;
   document.getElementById("proj3-btn").innerHTML = t.proj3Btn;
   document.getElementById("proj3-btn-code").innerHTML = t.featBtnCode;
+  document.getElementById("proj4-titulo").innerText = t.proj4Titulo;
+  document.getElementById("proj4-desc").innerText = t.proj4Desc;
+  document.getElementById("proj4-btn").innerHTML = t.proj4Btn;
+  document.getElementById("proj4-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("feat-status").innerText = t.featStatus;
   document.getElementById("feat-titulo").innerText = t.featTitulo;
   document.getElementById("feat-desc").innerText = t.featDesc;
   document.getElementById("feat-btn-live").innerHTML = t.featBtnLive;
-  document.getElementById("feat-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("contato-titulo").innerText = t.contatoTitulo;
   document.getElementById("contato-desc").innerText = t.contatoDesc;
   document.getElementById("email-label").innerText = t.emailLabel;
