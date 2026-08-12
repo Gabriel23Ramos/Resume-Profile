@@ -58,6 +58,14 @@ const translations = {
     emailLabel: "Email",
     whatsappLabel: "WhatsApp",
     linkedinLabel: "LinkedIn",
+    formTitle: "Ou me mande uma mensagem",
+    formNameLabel: "Nome",
+    formNamePlaceholder: "Seu nome",
+    formEmailLabel: "Email",
+    formEmailPlaceholder: "seu@email.com",
+    formMessageLabel: "Mensagem",
+    formMessagePlaceholder: "Como posso ajudar?",
+    formSubmit: "Enviar mensagem",
     footerText: "© 2026 Gabriel Ramos.",
     langBtn: "EN"
   },
@@ -118,6 +126,14 @@ const translations = {
     emailLabel: "Email",
     whatsappLabel: "WhatsApp",
     linkedinLabel: "LinkedIn",
+    formTitle: "Or send me a message",
+    formNameLabel: "Name",
+    formNamePlaceholder: "Your name",
+    formEmailLabel: "Email",
+    formEmailPlaceholder: "you@email.com",
+    formMessageLabel: "Message",
+    formMessagePlaceholder: "How can I help?",
+    formSubmit: "Send message",
     footerText: "© 2026 Gabriel Ramos.",
     langBtn: "PT"
   }
@@ -187,6 +203,14 @@ function trocarIdioma() {
   document.getElementById("email-label").innerText = t.emailLabel;
   document.getElementById("whatsapp-label").innerText = t.whatsappLabel;
   document.getElementById("linkedin-label").innerText = t.linkedinLabel;
+  document.getElementById("form-title").innerText = t.formTitle;
+  document.getElementById("form-name-label").innerText = t.formNameLabel;
+  document.getElementById("form-name").placeholder = t.formNamePlaceholder;
+  document.getElementById("form-email-label").innerText = t.formEmailLabel;
+  document.getElementById("form-email").placeholder = t.formEmailPlaceholder;
+  document.getElementById("form-message-label").innerText = t.formMessageLabel;
+  document.getElementById("form-message").placeholder = t.formMessagePlaceholder;
+  document.getElementById("form-submit-text").innerText = t.formSubmit;
   document.getElementById("footer-text").innerText = t.footerText;
   document.querySelector(".lang-text").innerText = t.langBtn;
 }
@@ -262,3 +286,49 @@ document.addEventListener("DOMContentLoaded", () => {
   home.classList.remove("reveal-hidden");
   home.classList.add("reveal");
 });
+
+// Contact form
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const submitBtn = document.getElementById("form-submit");
+    const submitText = document.getElementById("form-submit-text");
+    const status = document.getElementById("form-status");
+    const isEN = currentLang === "en";
+
+    submitBtn.disabled = true;
+    submitText.textContent = isEN ? "Sending..." : "Enviando...";
+    status.textContent = "";
+    status.className = "form-status";
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(new FormData(contactForm)))
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        status.textContent = isEN
+          ? "Message sent! I'll reply soon."
+          : "Mensagem enviada! Vou responder em breve.";
+        status.classList.add("success");
+        contactForm.reset();
+      } else {
+        throw new Error(data.message || "submit failed");
+      }
+    } catch (err) {
+      status.textContent = isEN
+        ? "Something went wrong. Try the email link above instead."
+        : "Algo deu errado. Tente pelo link de email acima.";
+      status.classList.add("error");
+    } finally {
+      submitBtn.disabled = false;
+      submitText.textContent = isEN ? "Send message" : "Enviar mensagem";
+    }
+  });
+}
+

@@ -330,42 +330,73 @@
           <p class="contact-desc" id="contato-desc">Estou sempre aberto a novas oportunidades e colaborações.</p>
         </div>
 
-        <div class="contact-list">
-          <a href="mailto:gabreilramos14@gmail.com" class="contact-item">
-            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="contact-label-group">
-              <h3 id="email-label">Email</h3>
-              <p>gabreilramos14@gmail.com</p>
-            </div>
-            <i class="fas fa-arrow-right contact-arrow"></i>
-          </a>
+        <div class="contact-grid">
+          <div class="contact-list">
+            <a href="mailto:gabreilramos14@gmail.com" class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-label-group">
+                <h3 id="email-label">Email</h3>
+                <p>gabreilramos14@gmail.com</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
 
-          <a href="https://wa.me/5583988234853" target="_blank" class="contact-item">
-            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-            <div class="contact-label-group">
-              <h3 id="whatsapp-label">WhatsApp</h3>
-              <p>(83) 98823-4853</p>
-            </div>
-            <i class="fas fa-arrow-right contact-arrow"></i>
-          </a>
+            <a href="https://wa.me/5583988234853" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+              <div class="contact-label-group">
+                <h3 id="whatsapp-label">WhatsApp</h3>
+                <p>(83) 98823-4853</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
 
-          <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="contact-item">
-            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="contact-label-group">
-              <h3 id="linkedin-label">LinkedIn</h3>
-              <p>gabrielramosdev</p>
-            </div>
-            <i class="fas fa-arrow-right contact-arrow"></i>
-          </a>
+            <a href="https://www.linkedin.com/in/gabrielramosdev" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div class="contact-label-group">
+                <h3 id="linkedin-label">LinkedIn</h3>
+                <p>gabrielramosdev</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
 
-          <a href="https://github.com/Gabriel23Ramos" target="_blank" class="contact-item">
-            <div class="contact-icon"><i class="fab fa-github"></i></div>
-            <div class="contact-label-group">
-              <h3>GitHub</h3>
-              <p>Gabriel23Ramos</p>
+            <a href="https://github.com/Gabriel23Ramos" target="_blank" class="contact-item">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div class="contact-label-group">
+                <h3>GitHub</h3>
+                <p>Gabriel23Ramos</p>
+              </div>
+              <i class="fas fa-arrow-right contact-arrow"></i>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <input type="hidden" name="access_key" value="SUA_ACCESS_KEY_AQUI">
+            <input type="checkbox" name="botcheck" class="form-honeypot" tabindex="-1" autocomplete="off">
+
+            <h3 class="contact-form-title" id="form-title">Ou me mande uma mensagem</h3>
+
+            <div class="form-row">
+              <label for="form-name" id="form-name-label">Nome</label>
+              <input type="text" id="form-name" name="name" placeholder="Seu nome" required>
             </div>
-            <i class="fas fa-arrow-right contact-arrow"></i>
-          </a>
+
+            <div class="form-row">
+              <label for="form-email" id="form-email-label">Email</label>
+              <input type="email" id="form-email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="form-row">
+              <label for="form-message" id="form-message-label">Mensagem</label>
+              <textarea id="form-message" name="message" rows="4" placeholder="Como posso ajudar?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+              <span id="form-submit-text">Enviar mensagem</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <p class="form-status" id="form-status"></p>
+          </form>
         </div>
       </div>
     </section>
