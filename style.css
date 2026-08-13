@@ -61,30 +61,27 @@ a {
   height: 7px;
   border-radius: 50%;
   background: var(--live);
-  box-shadow: 0 0 8px var(--live);
   flex-shrink: 0;
-  animation: dotPulse 2.4s infinite ease-in-out;
-}
-
-@keyframes dotPulse {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.45; }
 }
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  align-items: baseline;
   font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
+  font-size: 0.82rem;
   color: var(--muted);
-  text-transform: uppercase;
+  border-left: 2px solid var(--accent);
+  padding: 4px 0 4px 12px;
   margin-bottom: 1.4rem;
-  background: var(--bg-raised);
-  border: 1px solid var(--line-strong);
-  padding: 8px 16px;
-  border-radius: 100px;
+}
+
+.eyebrow-code {
+  color: var(--muted);
+}
+
+.eyebrow-value {
+  color: var(--accent);
+  margin-left: 4px;
 }
 
 .navbar {

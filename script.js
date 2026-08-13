@@ -143,12 +143,11 @@ function trocarIdioma() {
   currentLang = currentLang === "pt" ? "en" : "pt";
   const t = translations[currentLang];
 
-  // Update elements
   document.getElementById("nav-about").innerText = t.navAbout;
   document.getElementById("nav-exp").innerText = t.navExp;
   document.getElementById("nav-projects").innerText = t.navProjects;
   document.getElementById("nav-contact").innerText = t.navContact;
-  document.getElementById("hero-badge").innerText = t.heroBadge;
+  document.getElementById("hero-badge-value").innerText = '"' + t.heroBadge + '"';
   document.getElementById("titulo").innerHTML = t.titulo;
   document.getElementById("cargo").innerText = t.cargo;
   document.getElementById("descricao").innerText = t.descricao;
@@ -198,6 +197,7 @@ function trocarIdioma() {
   document.getElementById("feat-titulo").innerText = t.featTitulo;
   document.getElementById("feat-desc").innerText = t.featDesc;
   document.getElementById("feat-btn-live").innerHTML = t.featBtnLive;
+  document.getElementById("feat-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("contato-titulo").innerText = t.contatoTitulo;
   document.getElementById("contato-desc").innerText = t.contatoDesc;
   document.getElementById("email-label").innerText = t.emailLabel;
@@ -281,7 +281,6 @@ document.addEventListener("DOMContentLoaded", () => {
     section.classList.add("reveal-hidden");
     observer.observe(section);
   });
-  // Trigger for home
   const home = document.querySelector(".hero");
   home.classList.remove("reveal-hidden");
   home.classList.add("reveal");
