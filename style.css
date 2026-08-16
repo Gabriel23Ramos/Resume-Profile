@@ -281,6 +281,7 @@ a {
 
 .hero-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 3rem;
 }
@@ -1074,4 +1075,6 @@ a {
   .btn { padding: 12px 20px; font-size: 0.88rem; }
   .social-links { flex-wrap: wrap; gap: 1rem 1.4rem; }
   .fact-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .btn { justify-content: center; }
 }

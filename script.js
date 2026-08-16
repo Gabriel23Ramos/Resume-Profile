@@ -12,6 +12,7 @@ const translations = {
     descricao: "Transformando ideias em experiências digitais memoráveis com código limpo e design intuitivo.",
     btnProjetos: 'Ver Projetos <i class="fas fa-arrow-right"></i>',
     btnContato: "Entrar em contato",
+    btnCv: '<i class="fas fa-arrow-down"></i> Currículo',
     sobreSub: "Quem sou eu",
     sobreTitulo: "Sobre mim",
     sobreTexto: "Sou formado em Análise e Desenvolvimento de Sistemas e estou focado em me tornar desenvolvedor. Apaixonado por tecnologia e design, busco sempre criar experiências digitais que unam estética e funcionalidade. Tenho facilidade em aprender novas ferramentas e foco total em entregar valor através do código.",
@@ -80,6 +81,7 @@ const translations = {
     descricao: "Transforming ideas into memorable digital experiences with clean code and intuitive design.",
     btnProjetos: 'View Projects <i class="fas fa-arrow-right"></i>',
     btnContato: "Get in touch",
+    btnCv: '<i class="fas fa-arrow-down"></i> Resume',
     sobreSub: "Who am I",
     sobreTitulo: "About me",
     sobreTexto: "I have a degree in Systems Analysis and Development and I am focused on becoming a developer. Passionate about technology and design, I always seek to create digital experiences that combine aesthetics and functionality. I have a natural ability to learn new tools and a total focus on delivering value through code.",
@@ -153,6 +155,7 @@ function trocarIdioma() {
   document.getElementById("descricao").innerText = t.descricao;
   document.getElementById("btn-projetos").innerHTML = t.btnProjetos;
   document.getElementById("btn-contato").innerText = t.btnContato;
+  document.getElementById("btn-cv").innerHTML = t.btnCv;
   document.getElementById("sobre-sub").innerText = t.sobreSub;
   document.getElementById("sobre-titulo").innerText = t.sobreTitulo;
   document.getElementById("sobre-texto").innerText = t.sobreTexto;
