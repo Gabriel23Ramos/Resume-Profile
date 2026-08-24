@@ -15,40 +15,52 @@ const translations = {
     btnCv: '<i class="fas fa-arrow-down"></i> Currículo',
     sobreSub: "Quem sou eu",
     sobreTitulo: "Sobre mim",
-    sobreTexto: "Sou formado em Análise e Desenvolvimento de Sistemas e estou focado em me tornar desenvolvedor. Apaixonado por tecnologia e design, busco sempre criar experiências digitais que unam estética e funcionalidade. Tenho facilidade em aprender novas ferramentas e foco total em entregar valor através do código.",
+    sobreTexto: "Sou desenvolvedor full stack formado em Análise e Desenvolvimento de Sistemas, com projetos reais em produção do front ao back — de dashboards com dados em tempo real a sistemas de agendamento integrados a banco de dados. Gosto de resolver problemas concretos, aprendo ferramentas novas com rapidez e entrego código limpo unindo estética e funcionalidade.",
     statEdu: "Formação",
     statProj: "Projetos",
-    statExp: "Estágio",
+    statExp: "Experiência",
     factEduValue: "Análise e Desenvolvimento de Sistemas",
-    factExpValue: "4 meses — DWC Consult",
+    factExpValue: "Freelancer há 1 ano",
     skillsTitulo: "Tecnologias & Ferramentas",
+    skillsFrontendLabel: "Frontend",
+    skillsBackendLabel: "Backend & Dados",
+    skillsToolsLabel: "Ferramentas",
     idiomasTitulo: "Idiomas",
     langPt: "Português",
     langPtNivel: "nativo",
     langEn: "Inglês",
     langEnNivel: "fluente",
     expTitulo: "Experiência Profissional",
+    exp0Empresa: "Desenvolvedor Freelancer",
+    exp0Date: "2025 — Atual",
+    exp0Cargo: "Projetos independentes (1 ano)",
+    exp0Texto: "Atuo como freelancer há 1 ano desenvolvendo sites e sistemas sob demanda, aplicando toda a stack que domino: HTML5, CSS3, JavaScript, React, Node.js, Supabase, Fluig e Git, do front ao back, com foco em entregas responsivas e funcionais.",
     exp2Empresa: "Professor de Inglês",
     exp2Date: "2024 — Atual",
     exp2Cargo: "Aulas particulares (2 anos)",
     exp2Texto: "Leciono inglês há 2 anos, o que me ajuda a ler documentações e códigos com mais fluência, entender materiais técnicos na fonte e me comunicar melhor em contextos internacionais — abrindo portas para atuar em projetos e equipes fora do Brasil.",
     expEmpresa: "DWC Consult",
     expCargo: "Estágio em Desenvolvimento (4 meses)",
-    expTexto: "Atuação no desenvolvimento de soluções utilizando HTML, CSS e JavaScript, com foco na plataforma Fluig para automação de processos e criação de interfaces corporativas. Experiência focada em agilidade e entrega de componentes funcionais.",
+    expTexto1: "Desenvolvi interfaces corporativas responsivas na plataforma Fluig, usando HTML, CSS e JavaScript.",
+    expTexto2: "Contribuí para a automação de processos internos, substituindo etapas manuais por fluxos configurados na plataforma.",
+    expTexto3: "Entreguei componentes funcionais dentro de prazos ágeis, em contato direto com a equipe de consultoria.",
     projSub: "Meu Portfólio",
     projetosTitulo: "Projetos em Destaque",
+    otherProjectsLabel: "Outros projetos",
     proj1Titulo: "Ericka Ramos Nails",
-    proj1Desc: "Site completo para o estúdio de unhas da minha irmã: agenda de horários com disponibilidade real por dia da semana, reserva automática direto no banco de dados (Supabase), painel administrativo protegido por PIN para gerenciar horários e reservas manuais, e integração com WhatsApp para confirmação.",
+    proj1Desc: "Site para um negócio real: o estúdio de unhas da minha irmã. Substituiu o agendamento manual por WhatsApp por um sistema de reservas self-service com disponibilidade real por dia da semana, gravando direto no banco (Supabase). Inclui painel administrativo protegido por PIN para gerenciar horários e reservas, com confirmação automática via WhatsApp.",
     proj1Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
     proj2Titulo: "Weather App",
     proj2Desc: "Previsão do tempo por cidade ou geolocalização, com dados em tempo real via API pública.",
-    proj2Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
+    proj2BtnText: "Ver Projeto",
+    proj2CodeText: "Código",
     proj3Titulo: "Gabriel English Academy",
     proj3Desc: "Landing page para uma escola de inglês: quiz de nível interativo, seção de planos, certificado de conclusão com preview em modal e identidade visual própria construída do zero.",
     proj3Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
     proj4Titulo: "To-do List",
     proj4Desc: "Gerenciador de tarefas diárias, com foco em simplicidade e eficiência.",
-    proj4Btn: 'Ver Projeto <i class="fas fa-arrow-up-right-from-square"></i>',
+    proj4BtnText: "Ver Projeto",
+    proj4CodeText: "Código",
     featStatus: "projeto pessoal completo, em produção",
     featTitulo: "WealthPath — Gestão Financeira Pessoal",
     featDesc: "Dashboard completo de finanças pessoais: visão geral de saldo, receitas e despesas em tempo real, controle de metas e dívidas, gastos fixos recorrentes, categorização automática de transações e geração de relatórios em PDF. Interface com múltiplos temas, totalmente responsiva. O projeto mais completo que já construí, unindo várias tecnologias do front ao back.",
@@ -84,40 +96,52 @@ const translations = {
     btnCv: '<i class="fas fa-arrow-down"></i> Resume',
     sobreSub: "Who am I",
     sobreTitulo: "About me",
-    sobreTexto: "I have a degree in Systems Analysis and Development and I am focused on becoming a developer. Passionate about technology and design, I always seek to create digital experiences that combine aesthetics and functionality. I have a natural ability to learn new tools and a total focus on delivering value through code.",
+    sobreTexto: "I'm a full stack developer with a degree in Systems Analysis and Development, with real projects in production from front to back — from dashboards with real-time data to booking systems integrated with a database. I like solving concrete problems, I pick up new tools quickly, and I ship clean code that combines aesthetics and functionality.",
     statEdu: "Education",
     statProj: "Projects",
-    statExp: "Internship",
+    statExp: "Experience",
     factEduValue: "Systems Analysis and Development",
-    factExpValue: "4 months — DWC Consult",
+    factExpValue: "Freelancer for 1 year",
     skillsTitulo: "Technologies & Tools",
+    skillsFrontendLabel: "Frontend",
+    skillsBackendLabel: "Backend & Data",
+    skillsToolsLabel: "Tools",
     idiomasTitulo: "Languages",
     langPt: "Portuguese",
     langPtNivel: "native",
     langEn: "English",
     langEnNivel: "fluent",
     expTitulo: "Professional Experience",
+    exp0Empresa: "Freelance Developer",
+    exp0Date: "2025 — Present",
+    exp0Cargo: "Independent projects (1 year)",
+    exp0Texto: "I've been working as a freelancer for 1 year, building sites and systems on demand, applying my full stack: HTML5, CSS3, JavaScript, React, Node.js, Supabase, Fluig, and Git, from front to back, with a focus on responsive, functional delivery.",
     exp2Empresa: "English Teacher",
     exp2Date: "2024 — Present",
     exp2Cargo: "Private lessons (2 years)",
     exp2Texto: "I've been teaching English for 2 years, which helps me read documentation and code more fluently, understand technical material at the source, and communicate better in international contexts — opening doors to work on projects and teams outside Brazil.",
     expEmpresa: "DWC Consult",
     expCargo: "Development Intern (4 months)",
-    expTexto: "Working on the development of solutions using HTML, CSS, and JavaScript, focusing on the Fluig platform for process automation and creation of corporate interfaces. Experience focused on agility and delivering functional components.",
+    expTexto1: "Built responsive corporate interfaces on the Fluig platform using HTML, CSS, and JavaScript.",
+    expTexto2: "Contributed to internal process automation, replacing manual steps with flows configured on the platform.",
+    expTexto3: "Delivered functional components within agile deadlines, working directly with the consulting team.",
     projSub: "My Portfolio",
     projetosTitulo: "Featured Projects",
+    otherProjectsLabel: "Other projects",
     proj1Titulo: "Ericka Ramos Nails",
-    proj1Desc: "Full site for my sister's nail studio: a booking calendar with real weekly availability, automatic reservations saved straight to the database (Supabase), a PIN-protected admin panel to manage schedules and manual bookings, and WhatsApp integration for confirmation.",
+    proj1Desc: "A site for a real business: my sister's nail studio. It replaced manual WhatsApp scheduling with a self-service booking system with real weekly availability, saving straight to the database (Supabase). Includes a PIN-protected admin panel to manage schedules and bookings, with automatic WhatsApp confirmation.",
     proj1Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
     proj2Titulo: "Weather App",
     proj2Desc: "Weather forecast by city or geolocation, with real-time data from a public API.",
-    proj2Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
+    proj2BtnText: "View Project",
+    proj2CodeText: "Code",
     proj3Titulo: "Gabriel English Academy",
     proj3Desc: "Landing page for an English school: interactive level quiz, pricing plans, a completion certificate with a modal preview, and a custom visual identity built from scratch.",
     proj3Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
     proj4Titulo: "To-do List",
     proj4Desc: "Daily task manager focused on simplicity and efficiency.",
-    proj4Btn: 'View Project <i class="fas fa-arrow-up-right-from-square"></i>',
+    proj4BtnText: "View Project",
+    proj4CodeText: "Code",
     featStatus: "personal project, fully built and in production",
     featTitulo: "WealthPath — Personal Finance Management",
     featDesc: "A complete personal finance dashboard: real-time overview of balance, income and expenses, goal and debt tracking, recurring fixed expenses, automatic transaction categorization, and PDF report generation. Multi-theme interface, fully responsive. The most complete project I've built so far, bringing together many technologies from front to back.",
@@ -165,37 +189,47 @@ function trocarIdioma() {
   document.getElementById("fact-edu-value").innerText = t.factEduValue;
   document.getElementById("fact-exp-value").innerText = t.factExpValue;
   document.getElementById("skills-titulo").innerText = t.skillsTitulo;
+  document.getElementById("skills-frontend-label").innerText = t.skillsFrontendLabel;
+  document.getElementById("skills-backend-label").innerText = t.skillsBackendLabel;
+  document.getElementById("skills-tools-label").innerText = t.skillsToolsLabel;
   document.getElementById("idiomas-titulo").innerText = t.idiomasTitulo;
   document.getElementById("lang-pt").innerText = t.langPt;
   document.getElementById("lang-pt-nivel").innerText = t.langPtNivel;
   document.getElementById("lang-en").innerText = t.langEn;
   document.getElementById("lang-en-nivel").innerText = t.langEnNivel;
   document.getElementById("exp-titulo").innerText = t.expTitulo;
+  document.getElementById("exp0-empresa").innerText = t.exp0Empresa;
+  document.getElementById("exp0-date").innerText = t.exp0Date;
+  document.getElementById("exp0-cargo").innerText = t.exp0Cargo;
+  document.getElementById("exp0-texto").innerText = t.exp0Texto;
   document.getElementById("exp2-empresa").innerText = t.exp2Empresa;
   document.getElementById("exp2-date").innerText = t.exp2Date;
   document.getElementById("exp2-cargo").innerText = t.exp2Cargo;
   document.getElementById("exp2-texto").innerText = t.exp2Texto;
   document.getElementById("exp-empresa").innerText = t.expEmpresa;
   document.getElementById("exp-cargo").innerText = t.expCargo;
-  document.getElementById("exp-texto").innerText = t.expTexto;
+  document.getElementById("exp-texto-1").innerText = t.expTexto1;
+  document.getElementById("exp-texto-2").innerText = t.expTexto2;
+  document.getElementById("exp-texto-3").innerText = t.expTexto3;
   document.getElementById("proj-sub").innerText = t.projSub;
   document.getElementById("projetos-titulo").innerText = t.projetosTitulo;
+  document.getElementById("other-projects-label").innerText = t.otherProjectsLabel;
   document.getElementById("proj1-titulo").innerText = t.proj1Titulo;
   document.getElementById("proj1-desc").innerText = t.proj1Desc;
   document.getElementById("proj1-btn").innerHTML = t.proj1Btn;
   document.getElementById("proj1-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("proj2-titulo").innerText = t.proj2Titulo;
   document.getElementById("proj2-desc").innerText = t.proj2Desc;
-  document.getElementById("proj2-btn").innerHTML = t.proj2Btn;
-  document.getElementById("proj2-btn-code").innerHTML = t.featBtnCode;
+  document.getElementById("proj2-btn-text").innerText = t.proj2BtnText;
+  document.getElementById("proj2-code-text").innerText = t.proj2CodeText;
   document.getElementById("proj3-titulo").innerText = t.proj3Titulo;
   document.getElementById("proj3-desc").innerText = t.proj3Desc;
   document.getElementById("proj3-btn").innerHTML = t.proj3Btn;
   document.getElementById("proj3-btn-code").innerHTML = t.featBtnCode;
   document.getElementById("proj4-titulo").innerText = t.proj4Titulo;
   document.getElementById("proj4-desc").innerText = t.proj4Desc;
-  document.getElementById("proj4-btn").innerHTML = t.proj4Btn;
-  document.getElementById("proj4-btn-code").innerHTML = t.featBtnCode;
+  document.getElementById("proj4-btn-text").innerText = t.proj4BtnText;
+  document.getElementById("proj4-code-text").innerText = t.proj4CodeText;
   document.getElementById("feat-status").innerText = t.featStatus;
   document.getElementById("feat-titulo").innerText = t.featTitulo;
   document.getElementById("feat-desc").innerText = t.featDesc;
